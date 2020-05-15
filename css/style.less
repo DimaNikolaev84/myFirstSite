@@ -1,0 +1,88 @@
+// compress: true
+@import "vars";
+
+
+html {
+    font-size: 15px;    
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: @black;
+	
+	&.no-scroll {
+		overflow: hidden;
+	}
+	
+	  }
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f2f2f2;
+    }
+
+::-webkit-scrollbar-thumb {
+    background: #f2f2f2;
+    border-radius: 20px;
+    border: 1px solid @white;
+	box-shadow: 2px 2px 4px fade(@black, 50%) inset, 0px 0px 4px fade(@white, 50%) ;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: @gray-light;
+}
+
+
+
+//vendor
+
+@import "../vendor/slick";
+
+
+//block
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/user";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/social";
+@import "blocks/btn";
+@import "blocks/works";
+@import "blocks/portfolio";
+@import "blocks/work";
+@import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/news";
+@import "blocks/articles";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/modal-work";
+@import "blocks/timeline";
+@import "blocks/progress-bar";
+@import "blocks/contact";
+@import "blocks/form";
+@import "blocks/burger";
+
+
+//Helpers
+@import "helpers";
+
+
+
